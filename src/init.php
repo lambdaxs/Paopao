@@ -6,8 +6,6 @@ use Paopao\Base\Request\Request;
 
 
 $request = new Request('Weibo');
-
 $respones = $request->getResponse();
-
 $respones->output();
 
