@@ -98,7 +98,7 @@ $respones->output();
 ```	
 
 四、发送请求
-http://localhost:port/init.php?action=User/getInfo&name=xiaos&age=22
+http://localhost:port/src/init.php?action=User/getInfo&name=xiaos&age=20
 
 响应结果：
 
@@ -107,7 +107,7 @@ http://localhost:port/init.php?action=User/getInfo&name=xiaos&age=22
   "ret": 200,
   "data": {
     "name": "xiaos",
-    "age": "22"
+    "age": "20"
   },
   "msg": ""
 }
