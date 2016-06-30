@@ -1,0 +1,10 @@
+{
+    "require": {
+        "league/csv": "^8.1"
+    },
+    "autoload":{
+        "psr-4": {
+            "Paopao\\": "src"
+        }
+    }
+}
