@@ -6,8 +6,36 @@
 	第一个版本着重解决了各个类的模块划分、路由和请求的解析、以及和notORM库的整合。
 	
 以新建一个weibo项目为例子。
+
 一、配置数据库
 在Base/Config/DataBase.php中配置数据库。
+
+```php
+<?php
+namespace Paopao\Base\Config;
+/**
+ * Created by PhpStorm.
+ * User: xiaos
+ * Date: 16/6/29
+ * Time: 14:48
+ */
+class DataBase
+{
+    public static function getDBConfig(){
+        $result = [
+            'host' => 'localhost',
+            'name' => 'xiaos',
+            'user' => 'root',
+            'password' => 'root',
+            'port' => '8889',
+            'charset' => 'UTF8'
+        ];
+        return $result;
+    }
+
+}
+```
+
 二、在src目录下新建如下目录和文件
 
 ```js
