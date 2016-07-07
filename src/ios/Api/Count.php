@@ -91,10 +91,10 @@ class Count extends Api
     public function appUseInfo(){
         $model = new Model\Count();
         return $model->getTable('bonc_ios_use')->insert([
-            'appId' => $appId,
-                'appName' => $appName,
-                'appVersion' => $appVersion,
-                'machineUUID' => $machineUUID,
+            'appId' => $this->appId,
+                'appName' => $this->appName,
+                'appVersion' => $this->appVersion,
+                'machineUUID' => $this->machineUUID,
         ]);
     }
 }
