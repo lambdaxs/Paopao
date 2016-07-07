@@ -18,7 +18,6 @@ use Paopao\Base\DB\PaopaoORM;
  * @method insert($id,...)
  * @method update($id,...)
  * @method delete($d,...)
- * @method where($id,...)
  */
 abstract class PaopaoModel implements Model
 {
@@ -96,6 +95,11 @@ abstract class PaopaoModel implements Model
         $table = $this->getTableName($id);
         $orm = PaopaoORM::getInstance();
         return $orm->$table;
+    }
+
+    
+    public function getTable($tableName){
+        return $this->getPaopaoORM($tableName);
     }
 
     /**

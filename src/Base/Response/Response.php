@@ -13,7 +13,7 @@ abstract class Response {
     //状态码
     protected $ret = 200;
     //实体数据
-    protected $data = array();
+    protected $data = null;
     //说明
     protected $msg = '';
     //响应头

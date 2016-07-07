@@ -1,5 +1,7 @@
 <?php
 namespace Paopao\Base\Core;
+
+use Paopao\Base\Exception\PaopaoException;
 /**
  * Created by PhpStorm.
  * User: xiaos
@@ -9,4 +11,8 @@ namespace Paopao\Base\Core;
 class Domain
 {
 
+   protected function showErrorMessage($msg,$code){
+        throw new PaopaoException($msg,$code);
+   }
+    
 }

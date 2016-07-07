@@ -4,7 +4,7 @@ namespace Paopao\Weibo\Api;
 
 use Paopao\Base\Core\Api;
 use Paopao\Weibo\Domain;
-
+use Paopao\Weibo\Model;
 
 /**
  * Created by PhpStorm.
@@ -17,7 +17,7 @@ class User extends Api{
     public function getApis()
     {
         $name = ['desc' => '用户名','required' => false, 'default' => 'xiaos'];
-        $age = ['desc' => '用户年龄 范围0-100','required' => true];
+        $age =  ['desc' => '用户年龄 范围0-100','required' => true];
 
         return [
             'getInfo' => [
@@ -28,9 +28,8 @@ class User extends Api{
     }
 
     public function getInfo(){
-        return ['name' => $this->name, 'age' => $this->age];
-//        $domain = new Domain\User();
-//        return $domain->getName($this->name, $this->age);
+        $domain = new Domain\User();
+        return $domain->getName($this->name);
     }
 
     

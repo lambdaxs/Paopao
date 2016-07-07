@@ -8,12 +8,15 @@
 
 namespace Paopao\Weibo\Domain;
 
+use Paopao\Base\Core\Domain;
 use Paopao\Weibo\Model;
 
-class User
+class User extends Domain
 {
-    public function getName($name, $age){
-        $model = new Model\BlogModel();
-        return $model->showTitles($name, $age);
+    public function getName($name){
+        if ($name == 'xiaos'){
+            $this->showErrorMessage('姓名是xiaos',300);
+        }
+        return "hi,love u!!!";
     }
 }

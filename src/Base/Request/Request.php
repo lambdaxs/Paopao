@@ -4,13 +4,17 @@ namespace Paopao\Base\Request;
 
 use Paopao\Base\Exception\PaopaoException;
 use Paopao\Base\Response\JsonResponse;
+use Paopao\Base\Core;
 
 /**
  * Created by PhpStorm.
  * User: xiaos
  * Date: 16/6/29
  * Time: 14:11
+ * @property Core\Api $classInstance
  */
+
+
 class Request
 {
 
@@ -20,7 +24,6 @@ class Request
     private $className;
     private $functionName;
     private $params;
-    private  $requestBody;
 
     private $classInstance;
 
@@ -45,16 +48,10 @@ class Request
 
         if (!empty($_POST)){
             $this->params = $_POST;
-            $this->requestBody = @file_get_contents('php://input');
         }
     }
 
-
-    //获取POST请求的请求体内容
-    public function getRequestBody(){
-        return $this->requestBody;
-    }
-
+    
     /**
      * 获取响应
      * @return JsonResponse
@@ -69,6 +66,10 @@ class Request
 
             $this->classInstance = new $this->className();
 
+            //将请求体赋值给api对象的requestBody属性
+            $this->classInstance->requestBody = @file_get_contents('php://input');
+            //将响应对象赋值给api对象的response属性
+            $this->classInstance->response = $rs;
 
             //获取接口文档数据
             $apiDocs = $this->classInstance->getApis();
@@ -96,6 +97,7 @@ class Request
 
             $func = $this->functionName;
             $rs->setData($this->classInstance->$func());
+            $rs->setMsg('success');
 
         }catch (PaopaoException $e){
             $rs->setRet($e->getCode());

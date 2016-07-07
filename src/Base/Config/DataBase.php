@@ -11,7 +11,7 @@ class DataBase
     public static function getDBConfig(){
         $result = [
             'host' => 'localhost',
-            'name' => 'xiaos',
+            'name' => 'blog',
             'user' => 'root',
             'password' => 'root',
             'port' => '8889',
