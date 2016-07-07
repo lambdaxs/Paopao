@@ -11,10 +11,10 @@ class DataBase
     public static function getDBConfig(){
         $result = [
             'host' => 'localhost',
-            'name' => 'blog',
+            'name' => 'xiaos',
             'user' => 'root',
-            'password' => 'root',
-            'port' => '8889',
+            'password' => 'xs1994',
+            'port' => '3306',
             'charset' => 'UTF8'
         ];
         return $result;

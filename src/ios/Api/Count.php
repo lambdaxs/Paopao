@@ -45,10 +45,17 @@ class Count extends Api
                 'machineModel' => $machineModel,
                 'machineUUID' => $machineUUID,
             ],
+            'appUseInfo' => [
+                'appId' => $appId,
+                'appName' => $appName,
+                'appVersion' => $appVersion,
+                'machineUUID' => $machineUUID,
+            ],
             
         ];
     }
-    
+
+
     public function test(){
         return ['body' => $this->requestBody];
         // return ['key1' => $this->name,'key2' => $this->age];
@@ -84,8 +91,10 @@ class Count extends Api
     public function appUseInfo(){
         $model = new Model\Count();
         return $model->getTable('bonc_ios_use')->insert([
-            'appId' => $this->appId,
-            'uuid' => $this->uuid,
+            'appId' => $appId,
+                'appName' => $appName,
+                'appVersion' => $appVersion,
+                'machineUUID' => $machineUUID,
         ]);
     }
 }
