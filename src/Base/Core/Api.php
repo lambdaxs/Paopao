@@ -32,4 +32,15 @@ abstract class Api
     }
 
     abstract public function getApis();
+
+
+    //将数组转为可插入sql的散列 ['name','age'] ---> ['name'=>$this->name,'age'=>$this->age];
+    public function getInsertSQL($cols)
+    {
+        $newArray = [];
+        foreach ($cols as $value) {
+            $newArray[$value] = $this->$value;
+        }
+        return $newArray;
+    }
 }

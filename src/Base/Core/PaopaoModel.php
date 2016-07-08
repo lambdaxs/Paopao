@@ -39,6 +39,16 @@ abstract class PaopaoModel implements Model
         return $rs;
     }
 
+    public function  getWhere($key,$value,$fields = '*'){
+        $needFields = is_array($fields) ? implode(',', $fields) : $fields;
+        $notorm = $this->getORM();
+        $rs = $notorm->select($needFields)
+            ->where($key, $value)->fetchAll();
+        $this->parseExtData($rs);
+
+        return $rs;
+    }
+
     public function insert($data, $id = NULL) {
         $this->formatExtData($data);
 
@@ -55,10 +65,24 @@ abstract class PaopaoModel implements Model
         return $notorm->where('id', $id)->update($data);
     }
 
+    public function updateWhere($key,$value, $data) {
+        $this->formatExtData($data);
+
+        $notorm = $this->getORM();
+        return $notorm->where($key, $value)->update($data);
+    }
+
+
+
     public function delete($id) {
         $notorm = $this->getORM($id);
 
         return $notorm->where('id', $id)->delete();
+    }
+
+    public function deleteWhere($key, $value) {
+        $notorm = $this->getORM();
+        return $notorm->where($key, $value)->delete();
     }
 
     /**

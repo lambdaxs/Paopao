@@ -19,6 +19,6 @@ class Count extends PaopaoModel
 
     public function getTableName($id)
     {
-        return 'bonc_ios_device';
+        return 'bonc_ios_app';
     }
 }

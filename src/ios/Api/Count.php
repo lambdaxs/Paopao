@@ -51,6 +51,9 @@ class Count extends Api
                 'appVersion' => $appVersion,
                 'machineUUID' => $machineUUID,
             ],
+            'deleteItem' => [
+                'name' => $name,
+            ],
             
         ];
     }
@@ -64,37 +67,21 @@ class Count extends Api
     //统计应用安装信息
     public function appInstallInfo(){
         $model = new Model\Count();
-        return $model->getTable('bonc_ios_install')->insert([
-            'appId' => $this->appId,
-                'appName' => $this->appName,
-                'appVersion' => $this->appVersion,
-                'province' => $this->province,
-                'systemVersion' => $this->systemVersion,
-                'machineModel' => $this->machineModel,
-                'machineUUID' => $this->machineUUID,
-        ]);
-    }
-
-
-
-    //统计设备信息
-    public function deviceInfo(){
-        $model = new Model\Count();
-        return $model->insert([
-            'appId' => $this->appId,
-            'type' => $this->type,
-            'version'=>$this->version,
-            'uuid'=>$this->uuid]);
+        $insertSQL = $this->getInsertSQL(['appId','appName','appVersion','province','systemVersion','machineModel','machineUUID']);
+        return $model->getTable('bonc_ios_install')->insert($insertSQL);
     }
 
     //统计应用使用信息
     public function appUseInfo(){
         $model = new Model\Count();
-        return $model->getTable('bonc_ios_use')->insert([
-            'appId' => $this->appId,
-                'appName' => $this->appName,
-                'appVersion' => $this->appVersion,
-                'machineUUID' => $this->machineUUID,
-        ]);
+        $cols = ['appId','appName','appVersion','machineUUID'];
+        return $model->getTable('bonc_ios_use')->insert($this->getInsertSQL($cols));
     }
+
+    public function deleteItem()
+    {
+        $model = new Model\Count();
+        return $model->getWhere('province',$this->name,['id','appId','uuid']);
+    }
+
 }
