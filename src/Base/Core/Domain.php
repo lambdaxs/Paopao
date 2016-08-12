@@ -11,8 +11,5 @@ use Paopao\Base\Exception\PaopaoException;
 class Domain
 {
 
-   protected function showErrorMessage($msg,$code){
-        throw new PaopaoException($msg,$code);
-   }
-    
+  
 }

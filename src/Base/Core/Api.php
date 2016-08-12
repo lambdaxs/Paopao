@@ -3,7 +3,7 @@ namespace Paopao\Base\Core;
 
 use Paopao\Base\Response;
 use  Paopao\Base\Request;
-use  Paopao\Base\Core\Domain;
+
 /**
  * Created by PhpStorm.
  * User: xiaos
@@ -15,10 +15,10 @@ use  Paopao\Base\Core\Domain;
 abstract class Api
 {
 
-    //请求体中的内容 使用时注意过滤
-    protected $requestBody;
-    //返回响应的对象 可以添加请求头
-    protected $response;
+//    //请求体中的内容 使用时注意过滤
+//    protected $requestBody;
+//    //返回响应的对象 可以添加请求头
+//    protected $response;
 
 
     public function __set($name, $value)
@@ -33,14 +33,4 @@ abstract class Api
 
     abstract public function getApis();
 
-
-    //将数组转为可插入sql的散列 ['name','age'] ---> ['name'=>$this->name,'age'=>$this->age];
-    public function getInsertSQL($cols)
-    {
-        $newArray = [];
-        foreach ($cols as $value) {
-            $newArray[$value] = $this->$value;
-        }
-        return $newArray;
-    }
 }

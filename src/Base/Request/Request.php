@@ -5,6 +5,11 @@ namespace Paopao\Base\Request;
 use Paopao\Base\Exception\PaopaoException;
 use Paopao\Base\Response\JsonResponse;
 use Paopao\Base\Core;
+use Paopao\Base\Core\Tool;
+
+
+define('PAOPAO_BASE_DIR',dirname(__DIR__));
+define('PAOPAO_LOG_DIR',dirname(__DIR__).'/Log');
 
 /**
  * Created by PhpStorm.
@@ -13,7 +18,6 @@ use Paopao\Base\Core;
  * Time: 14:11
  * @property Core\Api $classInstance
  */
-
 
 class Request
 {
@@ -51,7 +55,7 @@ class Request
         }
     }
 
-    
+
     /**
      * 获取响应
      * @return JsonResponse
@@ -59,17 +63,15 @@ class Request
     public function getResponse(){
         $rs = new JsonResponse();
 
+        Tool::$response = $rs;
+        Tool::$requestBody = @file_get_contents('php://input');
+
         try {
             if (!class_exists($this->className)) {
                 throw new PaopaoException($this->className . '类不存在', 400);
             }
 
             $this->classInstance = new $this->className();
-
-            //将请求体赋值给api对象的requestBody属性
-            $this->classInstance->requestBody = @file_get_contents('php://input');
-            //将响应对象赋值给api对象的response属性
-            $this->classInstance->response = $rs;
 
             //获取接口文档数据
             $apiDocs = $this->classInstance->getApis();

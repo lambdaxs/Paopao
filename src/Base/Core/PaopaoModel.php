@@ -14,10 +14,7 @@ use Paopao\Base\DB\PaopaoORM;
 
 /**
  * 方法声明
- * @method select($id,...)
- * @method insert($id,...)
- * @method update($id,...)
- * @method delete($d,...)
+ * @method select($id)
  */
 abstract class PaopaoModel implements Model
 {

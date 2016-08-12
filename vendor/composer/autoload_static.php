@@ -11,6 +11,10 @@ class ComposerStaticInitbda5f42b6d065c9e67d2f916fb79c118
         array (
             'Paopao\\' => 7,
         ),
+        'M' => 
+        array (
+            'Monolog\\' => 8,
+        ),
         'L' => 
         array (
             'League\\Csv\\' => 11,
@@ -22,9 +26,23 @@ class ComposerStaticInitbda5f42b6d065c9e67d2f916fb79c118
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
+        'Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
         'League\\Csv\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/csv/src',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'P' => 
+        array (
+            'Psr\\Log\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/psr/log',
+            ),
         ),
     );
 
@@ -33,6 +51,7 @@ class ComposerStaticInitbda5f42b6d065c9e67d2f916fb79c118
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitbda5f42b6d065c9e67d2f916fb79c118::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitbda5f42b6d065c9e67d2f916fb79c118::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitbda5f42b6d065c9e67d2f916fb79c118::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }
