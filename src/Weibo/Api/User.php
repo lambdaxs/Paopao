@@ -24,12 +24,19 @@ class User extends Api{
                 'name' => $name,
                 'age' => $age
             ],
+            'getHeader' => [
+
+            ],
         ];
     }
 
     public function getInfo(){
         $domain = new Domain\User();
         return $domain->getName($this->name);
+    }
+
+    public function getHeader(){
+        return $_SERVER;
     }
 
     
