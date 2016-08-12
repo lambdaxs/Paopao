@@ -3,6 +3,7 @@
 namespace Paopao\Weibo\Api;
 
 use Paopao\Base\Core\Api;
+use Paopao\Base\Core\Tool;
 use Paopao\Weibo\Domain;
 use Paopao\Weibo\Model;
 
@@ -36,6 +37,7 @@ class User extends Api{
     }
 
     public function getHeader(){
+        Tool::logInfo('getHeader','this is info');
         return $_SERVER;
     }
 
