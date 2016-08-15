@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0a5fe52-5782-400a-b7f0-d291b817cd5d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Weibo/Api/User.php" afterPath="$PROJECT_DIR$/src/Weibo/Api/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/Exception/PaopaoException.php" afterPath="$PROJECT_DIR$/src/Base/Exception/PaopaoException.php" />
     </list>
     <ignored path="Paopao.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Weibo/Api/User.php">
+      <file leaf-file-name="PaopaoException.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Base/Exception/PaopaoException.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+            <state relative-caret-position="408">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -60,6 +61,7 @@
         <option value="$PROJECT_DIR$/src/Base/Core/Api.php" />
         <option value="$PROJECT_DIR$/src/Base/Core/Domain.php" />
         <option value="$PROJECT_DIR$/src/Weibo/Api/User.php" />
+        <option value="$PROJECT_DIR$/src/Base/Exception/PaopaoException.php" />
       </list>
     </option>
   </component>
@@ -102,8 +104,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -394,6 +394,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -477,12 +479,13 @@
       <workItem from="1467381370815" duration="1066000" />
       <workItem from="1467787298041" duration="7516000" />
       <workItem from="1467883984795" duration="2413000" />
-      <workItem from="1471009639400" duration="1621000" />
+      <workItem from="1471009639400" duration="1851000" />
+      <workItem from="1471224783512" duration="127000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17006000" />
+    <option name="totallyTimeSpent" value="17363000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1237" height="777" extended-state="6" />
@@ -523,25 +526,28 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Weibo/Api/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+          <folding>
+            <marker date="1471011565000" expanded="false" signature="40:137" placeholder="..." />
+            <marker date="1471011565000" expanded="true" signature="142:215" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1471011565000" expanded="true" signature="241:847" placeholder="..." />
+            <marker date="1471011565000" expanded="true" signature="272:603" placeholder="{...}" />
+            <marker date="1471011565000" expanded="true" signature="436:595" placeholder="..." />
+            <marker date="1471011565000" expanded="true" signature="463:539" placeholder="..." />
+            <marker date="1471011565000" expanded="true" signature="570:584" placeholder="..." />
+            <marker date="1471011565000" expanded="true" signature="635:723" placeholder="..." />
+            <marker date="1471011565000" expanded="true" signature="758:839" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ios/Api/Count.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1309">
           <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
-          <folding>
-            <marker date="1471009564000" expanded="true" signature="37:109" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1471009564000" expanded="true" signature="117:160" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="185:2440" placeholder="{...}" />
-            <marker date="1471009564000" expanded="true" signature="217:1587" placeholder="{...}" />
-            <marker date="1471009564000" expanded="true" signature="790:1579" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="814:897" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="946:1266" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="1298:1477" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="1509:1555" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="1617:1733" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="1788:2034" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="2085:2275" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="2310:2437" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -549,21 +555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-          <folding>
-            <marker date="1471009564000" expanded="true" signature="37:109" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1471009564000" expanded="true" signature="117:160" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="185:2440" placeholder="{...}" />
-            <marker date="1471009564000" expanded="true" signature="217:1587" placeholder="{...}" />
-            <marker date="1471009564000" expanded="true" signature="790:1579" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="814:897" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="946:1266" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="1298:1477" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="1509:1555" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="1617:1733" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="1788:2034" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="2085:2275" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="2310:2437" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -582,7 +573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -590,14 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/Exception/PaopaoException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -627,21 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1326">
           <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
-          <folding>
-            <marker date="1471009564000" expanded="true" signature="37:109" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1471009564000" expanded="true" signature="117:160" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="185:2440" placeholder="{...}" />
-            <marker date="1471009564000" expanded="true" signature="217:1587" placeholder="{...}" />
-            <marker date="1471009564000" expanded="true" signature="790:1579" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="814:897" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="946:1266" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="1298:1477" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="1509:1555" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="1617:1733" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="1788:2034" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="2085:2275" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="2310:2437" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -649,12 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding>
-            <marker date="1471009564000" expanded="true" signature="76:149" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1471009564000" expanded="true" signature="189:362" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="222:284" placeholder="..." />
-            <marker date="1471009564000" expanded="true" signature="327:361" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -665,7 +626,6 @@
           <folding>
             <marker date="1471011065000" expanded="true" signature="41:188" placeholder="..." />
             <marker date="1471011065000" expanded="true" signature="193:307" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1471011065000" expanded="true" signature="321:1864" placeholder="{...}" />
             <marker date="1471011065000" expanded="true" signature="439:494" placeholder="..." />
             <marker date="1471011065000" expanded="true" signature="628:782" placeholder="{...}" />
             <marker date="1471011065000" expanded="true" signature="694:749" placeholder="..." />
@@ -684,7 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -724,6 +683,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/Core/PaopaoModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/Core/Api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+          <folding>
+            <marker date="1471011317000" expanded="true" signature="39:86" placeholder="..." />
+            <marker date="1471011317000" expanded="true" signature="91:241" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1471011317000" expanded="true" signature="266:370" placeholder="//..." />
+            <marker date="1471011317000" expanded="true" signature="413:456" placeholder="{...}" />
+            <marker date="1471011317000" expanded="true" signature="490:531" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/Core/Domain.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weiboApi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Weibo/Api/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+          <folding>
+            <marker date="1471011565000" expanded="false" signature="40:137" placeholder="..." />
+            <marker date="1471011565000" expanded="true" signature="142:215" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1471011565000" expanded="true" signature="241:847" placeholder="..." />
+            <marker date="1471011565000" expanded="true" signature="272:603" placeholder="{...}" />
+            <marker date="1471011565000" expanded="true" signature="436:595" placeholder="..." />
+            <marker date="1471011565000" expanded="true" signature="463:539" placeholder="..." />
+            <marker date="1471011565000" expanded="true" signature="570:584" placeholder="..." />
+            <marker date="1471011565000" expanded="true" signature="635:723" placeholder="..." />
+            <marker date="1471011565000" expanded="true" signature="758:839" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Base/Request/Request.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -752,79 +764,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/Core/PaopaoModel.php">
+    <entry file="file://$PROJECT_DIR$/src/Base/Exception/PaopaoException.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-          <folding>
-            <marker date="1471010985000" expanded="false" signature="39:90" placeholder="..." />
-            <marker date="1471010985000" expanded="true" signature="95:168" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1471010985000" expanded="true" signature="176:209" placeholder=" 方法声明 ..." />
-            <marker date="1471010985000" expanded="true" signature="255:2992" placeholder="{...}" />
-            <marker date="1471010985000" expanded="true" signature="266:350" placeholder=" 快速获取id实体对象 ..." />
-            <marker date="1471010985000" expanded="true" signature="398:657" placeholder="..." />
-            <marker date="1471010985000" expanded="true" signature="576:585" placeholder="..." />
-            <marker date="1471010985000" expanded="true" signature="717:977" placeholder="..." />
-            <marker date="1471010985000" expanded="true" signature="891:903" placeholder="..." />
-            <marker date="1471010985000" expanded="true" signature="1027:1178" placeholder="..." />
-            <marker date="1471010985000" expanded="true" signature="1221:1359" placeholder="..." />
-            <marker date="1471010985000" expanded="true" signature="1415:1553" placeholder="..." />
-            <marker date="1471010985000" expanded="true" signature="1591:1687" placeholder="..." />
-            <marker date="1471010985000" expanded="true" signature="1737:1832" placeholder="..." />
-            <marker date="1471010985000" expanded="true" signature="1842:1881" placeholder=" 对LOB的ext_data字段进行格式化(序列化) ..." />
-            <marker date="1471010985000" expanded="true" signature="1930:2049" placeholder="..." />
-            <marker date="1471010985000" expanded="true" signature="1970:2043" placeholder="..." />
-            <marker date="1471010985000" expanded="true" signature="2059:2098" placeholder=" 对LOB的ext_data字段进行解析(反序列化) ..." />
-            <marker date="1471010985000" expanded="true" signature="2146:2271" placeholder="..." />
-            <marker date="1471010985000" expanded="true" signature="2186:2265" placeholder="..." />
-            <marker date="1471010985000" expanded="true" signature="2281:2315" placeholder=" 根据主键值返回对应的表名，注意分表的情况 ..." />
-            <marker date="1471010985000" expanded="true" signature="2379:2471" placeholder=" 快速获取ORM实例，注意每次获取都是新的实例 ..." />
-            <marker date="1471010985000" expanded="true" signature="2514:2632" placeholder="..." />
-            <marker date="1471010985000" expanded="true" signature="2681:2734" placeholder="..." />
-            <marker date="1471010985000" expanded="true" signature="2744:2834" placeholder=" 返回可操作的notorm对象 ..." />
-            <marker date="1471010985000" expanded="true" signature="2885:2989" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/Core/Api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-          <folding>
-            <marker date="1471011317000" expanded="true" signature="39:86" placeholder="..." />
-            <marker date="1471011317000" expanded="true" signature="91:241" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1471011317000" expanded="true" signature="262:575" placeholder="{...}" />
-            <marker date="1471011317000" expanded="true" signature="266:370" placeholder="//..." />
-            <marker date="1471011317000" expanded="true" signature="413:456" placeholder="{...}" />
-            <marker date="1471011317000" expanded="true" signature="490:531" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/Core/Domain.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <marker date="1471011330000" expanded="true" signature="81:154" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1471011330000" expanded="true" signature="169:177" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/weiboApi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Weibo/Api/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+        <state relative-caret-position="408">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding />
         </state>
       </provider>
