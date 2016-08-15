@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0a5fe52-5782-400a-b7f0-d291b817cd5d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/Exception/PaopaoException.php" afterPath="$PROJECT_DIR$/src/Base/Exception/PaopaoException.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/Request/Request.php" afterPath="$PROJECT_DIR$/src/Base/Request/Request.php" />
     </list>
     <ignored path="Paopao.iws" />
@@ -24,12 +23,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PaopaoException.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Base/Exception/PaopaoException.php">
+      <file leaf-file-name="Request.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Base/Request/Request.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-              <folding />
+            <state relative-caret-position="589">
+              <caret line="109" column="31" selection-start-line="109" selection-start-column="31" selection-end-line="109" selection-end-column="31" />
+              <folding>
+                <element signature="e#39#81#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,8 +61,8 @@
         <option value="$PROJECT_DIR$/src/Base/Core/Api.php" />
         <option value="$PROJECT_DIR$/src/Base/Core/Domain.php" />
         <option value="$PROJECT_DIR$/src/Weibo/Api/User.php" />
-        <option value="$PROJECT_DIR$/src/Base/Request/Request.php" />
         <option value="$PROJECT_DIR$/src/Base/Exception/PaopaoException.php" />
+        <option value="$PROJECT_DIR$/src/Base/Request/Request.php" />
       </list>
     </option>
   </component>
@@ -480,12 +481,12 @@
       <workItem from="1467787298041" duration="7516000" />
       <workItem from="1467883984795" duration="2413000" />
       <workItem from="1471009639400" duration="1851000" />
-      <workItem from="1471224783512" duration="428000" />
+      <workItem from="1471224783512" duration="600000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17664000" />
+    <option name="totallyTimeSpent" value="17836000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1237" height="777" extended-state="6" />
@@ -736,39 +737,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/Request/Request.php">
+    <entry file="file://$PROJECT_DIR$/src/Base/Exception/PaopaoException.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="107" column="40" selection-start-line="107" selection-start-column="40" selection-end-line="107" selection-end-column="40" />
+        <state relative-caret-position="238">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding>
-            <marker date="1471225201000" expanded="true" signature="43:169" placeholder="..." />
-            <marker date="1471225201000" expanded="true" signature="270:380" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1471225201000" expanded="true" signature="397:3088" placeholder="{...}" />
-            <marker date="1471225201000" expanded="true" signature="593:758" placeholder="{...}" />
-            <marker date="1471225201000" expanded="true" signature="794:983" placeholder="..." />
-            <marker date="1471225201000" expanded="true" signature="1019:1140" placeholder="..." />
-            <marker date="1471225201000" expanded="true" signature="1089:1134" placeholder="..." />
-            <marker date="1471225201000" expanded="true" signature="1151:1197" placeholder=" 获取响应 ..." />
-            <marker date="1471225201000" expanded="true" signature="1234:3084" placeholder="..." />
-            <marker date="1471225201000" expanded="true" signature="1379:2639" placeholder="..." />
-            <marker date="1471225201000" expanded="true" signature="1430:1518" placeholder="..." />
-            <marker date="1471225201000" expanded="true" signature="1821:1931" placeholder="..." />
-            <marker date="1471225201000" expanded="true" signature="2072:2493" placeholder="..." />
-            <marker date="1471225201000" expanded="true" signature="2131:2218" placeholder="..." />
-            <marker date="1471225201000" expanded="true" signature="2225:2479" placeholder="..." />
-            <marker date="1471225201000" expanded="true" signature="2271:2364" placeholder="..." />
-            <marker date="1471225201000" expanded="true" signature="2371:2461" placeholder="..." />
-            <marker date="1471225201000" expanded="true" signature="2667:2953" placeholder="..." />
-            <marker date="1471225201000" expanded="true" signature="2976:3058" placeholder="..." />
+            <marker date="1471225210000" expanded="true" signature="71:144" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1471225210000" expanded="true" signature="187:196" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/Exception/PaopaoException.php">
+    <entry file="file://$PROJECT_DIR$/src/Base/Request/Request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="589">
+          <caret line="109" column="31" selection-start-line="109" selection-start-column="31" selection-end-line="109" selection-end-column="31" />
+          <folding>
+            <element signature="e#39#81#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

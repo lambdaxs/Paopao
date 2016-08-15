@@ -101,16 +101,19 @@ class Request
             $rs->setData($this->classInstance->$func());
             $rs->setMsg('success');
 
-        }catch (PaopaoException $e){
-            $exceptionCode = $e->getCode();
-            $exceptionMessage = $e->getMessage();
+        }catch (PaopaoException $pe){
+            $exceptionCode = $pe->getCode();
+            $exceptionMessage = $pe->getMessage();
             Tool::logError('code:message','code:'.$exceptionCode.'--message:'.$exceptionMessage);
             $rs->setRet($exceptionCode);
             $rs->setMsg($exceptionMessage);
         }catch (\Exception $e){
+            $systemErr = $e->getMessage();
+            Tool::logError('systemErr',$systemErr);
             $rs->setRet(500);
-            $rs->setMsg($e->getMessage());
+            $rs->setMsg($systemErr);
         }
+
         return $rs;
     }
 
