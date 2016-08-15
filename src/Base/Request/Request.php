@@ -102,8 +102,11 @@ class Request
             $rs->setMsg('success');
 
         }catch (PaopaoException $e){
-            $rs->setRet($e->getCode());
-            $rs->setMsg($e->getMessage());
+            $exceptionCode = $e->getCode();
+            $exceptionMessage = $e->getMessage();
+            Tool::logError('code:message','code:'.$exceptionCode.'--message:'.$exceptionMessage);
+            $rs->setRet($exceptionCode);
+            $rs->setMsg($exceptionMessage);
         }catch (\Exception $e){
             $rs->setRet(500);
             $rs->setMsg($e->getMessage());

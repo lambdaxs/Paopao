@@ -11,16 +11,5 @@ use Paopao\Base\Core\Tool;
  */
 class PaopaoException extends \Exception
 {
-
-    public function setCode($code)
-    {
-        Tool::logError('code',$code);
-        $this->code = $code;
-    }
-
-    public function setMessage($message)
-    {
-        Tool::logError('message',$message);
-        $this->message = $message;
-    }
+    
 }

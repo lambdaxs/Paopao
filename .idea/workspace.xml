@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0a5fe52-5782-400a-b7f0-d291b817cd5d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/Exception/PaopaoException.php" afterPath="$PROJECT_DIR$/src/Base/Exception/PaopaoException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/Request/Request.php" afterPath="$PROJECT_DIR$/src/Base/Request/Request.php" />
     </list>
     <ignored path="Paopao.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,8 +27,8 @@
       <file leaf-file-name="PaopaoException.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Base/Exception/PaopaoException.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="221">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -56,11 +56,11 @@
         <option value="$PROJECT_DIR$/src/Base/Core/PaopaoModel.php" />
         <option value="$PROJECT_DIR$/src/Base/Core/Tool.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/Base/Request/Request.php" />
         <option value="$PROJECT_DIR$/src/Base/Response/Response.php" />
         <option value="$PROJECT_DIR$/src/Base/Core/Api.php" />
         <option value="$PROJECT_DIR$/src/Base/Core/Domain.php" />
         <option value="$PROJECT_DIR$/src/Weibo/Api/User.php" />
+        <option value="$PROJECT_DIR$/src/Base/Request/Request.php" />
         <option value="$PROJECT_DIR$/src/Base/Exception/PaopaoException.php" />
       </list>
     </option>
@@ -480,12 +480,12 @@
       <workItem from="1467787298041" duration="7516000" />
       <workItem from="1467883984795" duration="2413000" />
       <workItem from="1471009639400" duration="1851000" />
-      <workItem from="1471224783512" duration="127000" />
+      <workItem from="1471224783512" duration="428000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17363000" />
+    <option name="totallyTimeSpent" value="17664000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1237" height="777" extended-state="6" />
@@ -738,36 +738,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Base/Request/Request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="65" column="30" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+        <state relative-caret-position="555">
+          <caret line="107" column="40" selection-start-line="107" selection-start-column="40" selection-end-line="107" selection-end-column="40" />
           <folding>
-            <marker date="1471011217000" expanded="true" signature="43:169" placeholder="..." />
-            <marker date="1471011217000" expanded="true" signature="270:380" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1471011217000" expanded="true" signature="397:2894" placeholder="{...}" />
-            <marker date="1471011217000" expanded="true" signature="593:758" placeholder="{...}" />
-            <marker date="1471011217000" expanded="true" signature="794:983" placeholder="..." />
-            <marker date="1471011217000" expanded="true" signature="1019:1140" placeholder="..." />
-            <marker date="1471011217000" expanded="true" signature="1089:1134" placeholder="..." />
-            <marker date="1471011217000" expanded="true" signature="1151:1197" placeholder=" 获取响应 ..." />
-            <marker date="1471011217000" expanded="true" signature="1234:2890" placeholder="..." />
-            <marker date="1471011217000" expanded="true" signature="1379:2639" placeholder="..." />
-            <marker date="1471011217000" expanded="true" signature="1430:1518" placeholder="..." />
-            <marker date="1471011217000" expanded="true" signature="1821:1931" placeholder="..." />
-            <marker date="1471011217000" expanded="true" signature="2072:2493" placeholder="..." />
-            <marker date="1471011217000" expanded="true" signature="2131:2218" placeholder="..." />
-            <marker date="1471011217000" expanded="true" signature="2225:2479" placeholder="..." />
-            <marker date="1471011217000" expanded="true" signature="2271:2364" placeholder="..." />
-            <marker date="1471011217000" expanded="true" signature="2371:2461" placeholder="..." />
-            <marker date="1471011217000" expanded="true" signature="2667:2759" placeholder="..." />
-            <marker date="1471011217000" expanded="true" signature="2782:2864" placeholder="..." />
+            <marker date="1471225201000" expanded="true" signature="43:169" placeholder="..." />
+            <marker date="1471225201000" expanded="true" signature="270:380" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1471225201000" expanded="true" signature="397:3088" placeholder="{...}" />
+            <marker date="1471225201000" expanded="true" signature="593:758" placeholder="{...}" />
+            <marker date="1471225201000" expanded="true" signature="794:983" placeholder="..." />
+            <marker date="1471225201000" expanded="true" signature="1019:1140" placeholder="..." />
+            <marker date="1471225201000" expanded="true" signature="1089:1134" placeholder="..." />
+            <marker date="1471225201000" expanded="true" signature="1151:1197" placeholder=" 获取响应 ..." />
+            <marker date="1471225201000" expanded="true" signature="1234:3084" placeholder="..." />
+            <marker date="1471225201000" expanded="true" signature="1379:2639" placeholder="..." />
+            <marker date="1471225201000" expanded="true" signature="1430:1518" placeholder="..." />
+            <marker date="1471225201000" expanded="true" signature="1821:1931" placeholder="..." />
+            <marker date="1471225201000" expanded="true" signature="2072:2493" placeholder="..." />
+            <marker date="1471225201000" expanded="true" signature="2131:2218" placeholder="..." />
+            <marker date="1471225201000" expanded="true" signature="2225:2479" placeholder="..." />
+            <marker date="1471225201000" expanded="true" signature="2271:2364" placeholder="..." />
+            <marker date="1471225201000" expanded="true" signature="2371:2461" placeholder="..." />
+            <marker date="1471225201000" expanded="true" signature="2667:2953" placeholder="..." />
+            <marker date="1471225201000" expanded="true" signature="2976:3058" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Base/Exception/PaopaoException.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="221">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
           <folding />
         </state>
       </provider>
