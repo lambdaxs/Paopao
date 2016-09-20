@@ -11,6 +11,7 @@ namespace Paopao\ios\Api;
 
 use Paopao\Base\Core\Api;
 use Paopao\ios\Model;
+use Paopao\Base\Core\Tool;
 
 class Count extends Api
 {
@@ -67,7 +68,7 @@ class Count extends Api
     //统计应用安装信息
     public function appInstallInfo(){
         $model = new Model\Count();
-        $insertSQL = $this->getInsertSQL(['appId','appName','appVersion','province','systemVersion','machineModel','machineUUID']);
+        $insertSQL = Tool::formatSQL($this,['appId','appName','appVersion','province','systemVersion','machineModel','machineUUID']);
         return $model->getTable('bonc_ios_install')->insert($insertSQL);
     }
 
@@ -75,7 +76,7 @@ class Count extends Api
     public function appUseInfo(){
         $model = new Model\Count();
         $cols = ['appId','appName','appVersion','machineUUID'];
-        return $model->getTable('bonc_ios_use')->insert($this->getInsertSQL($cols));
+        return $model->getTable('bonc_ios_use')->insert(Tool::formatSQL($this,$cols));
     }
 
     public function deleteItem()
